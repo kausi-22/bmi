@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<body bgcolor="silver">  
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styleindex.css') }}">  
+  <title>Prediction</title>  
+</head>
+<body>
+    
+    <div class="login center">
+        <h2>BMI</h2>
+        <br>
+
+        
+	<form action ="{{url_for('bmi')}}" method ="POST">
+	     <button id ="PREDICT" type ="submit" class="btn btn-primary btn-block btn-large"> BMI prediction  </button>
+	</form>
+
+        
+    </div>
+</body>
+</html>
